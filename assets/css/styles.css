@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;900&display=swap');
 
 /*=============== VARIABLES CSS ===============*/
 :root {
@@ -7,16 +7,16 @@
 
   /*========== Colors ==========*/
   --hue: 14;
-  --first-color: hsl(var(--hue), 91%, 54%);
-  --first-color-alt: hsl(var(--hue), 91%, 50%);
-  --title-color: hsl(var(--hue), 4%, 100%);
+  --first-color: hsl(164, 17%, 27%);
+  --first-color-alt: hsl(164, 17%, 32%);
+  --title-color: hsl(165, 92%, 51%);
   --text-color: hsl(var(--hue), 4%, 85%);
   --text-color-light: hsl(var(--hue), 4%, 55%);
   --body-color:  hsl(196, 16%, 14%);
   --container-color:linear-gradient(hsl(164, 17%, 27%), hsl(164, 17%, 32%), hsl(164, 17%, 40%), hsl(164, 17%, 45%)); 
 
   /*========== Font and typography ==========*/
-  --body-font: 'Poppins', sans-serif;
+  --body-font: 'Montserrat', sans-serif;
   --biggest-font-size: 2rem;
   --h1-font-size: 1.5rem;
   --h2-font-size: 1.25rem;
@@ -157,7 +157,7 @@ button{
 }
 
 .nav_logo-img{
-  width: 5rem;
+  width: 6rem;
 }
 
 .nav_link,
