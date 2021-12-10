@@ -408,6 +408,27 @@ button{
   justify-self: center;
 }
 
+/*=============== ROADMAP ===============*/
+.container_roadmap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roadmap {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+.roadmap ul li {
+  padding: 8px;
+  background-color: var(--first-color);
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
 /*=============== TRICK OR TREAT ===============*/
 .trick_container{
   grid-template-columns: repeat(2, 1fr);
