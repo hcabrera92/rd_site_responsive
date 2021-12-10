@@ -424,11 +424,79 @@ button{
   position: relative;
 }
 .roadmap ul li {
-  padding: 8px;
+  padding: 5px;
   background-color: var(--first-color);
   border-radius: 10px;
   margin-bottom: 20px;
 }
+
+.roadmap ul li:last-child {
+  margin-bottom: 0;
+}
+
+.roadmap_content h2 {
+  font-size: var(--h1-font-size);
+  font-weight: 600;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.roadmap_content p {
+  font-size: var(--normal-font-size);
+  line-height: 30px;
+  font-weight: var(--font-medium);
+}
+
+@media only screen and (min-width: 768px) {
+  .roadmap::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 2px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: var(--title-color);
+  }
+  .roadmap ul li {
+    width: 50%;
+    margin-bottom: 50px;
+    position: relative;
+  }
+
+  .roadmap ul li:nth-child(odd){
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+  }
+
+  .roadmap ul li:nth-child(even){
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+  }
+
+  .roadmap ul li::after {
+    content: '';
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--first-color);
+    border-radius: 50%;
+    top: 0; 
+  }
+
+  .roadmap ul li:nth-child(odd)::after {
+    transform: translate(50%, -50%);
+    right: -30px;
+  }
+  .roadmap ul li:nth-child(even)::after {
+    transform: translate(-50%, 50%);
+    right: 30px;
+  }
+  
+
+} 
+
 /*=============== TRICK OR TREAT ===============*/
 .trick_container{
   grid-template-columns: repeat(2, 1fr);
