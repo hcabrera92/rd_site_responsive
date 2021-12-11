@@ -497,7 +497,7 @@ button{
 
 } 
 
-/*=============== TRICK OR TREAT ===============*/
+/*=============== OUR TEAM ===============*/
 .trick_container{
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
@@ -514,7 +514,7 @@ button{
 }
 
 .trick_img {
-  width: 90px;
+ 
   transition: .3s;
 }
 
@@ -542,6 +542,7 @@ button{
   position: absolute;
   right: -3rem;
   bottom: 0;
+  color: var(--title-color);
 }
 
 .trick_button{
