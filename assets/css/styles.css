@@ -491,7 +491,7 @@ button{
   }
   .roadmap ul li:nth-child(even)::after {
     transform: translate(-50%, 50%);
-    right: 30px;
+    left: -30px;
   }
   
 
