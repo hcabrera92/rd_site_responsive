@@ -428,6 +428,7 @@ button{
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .roadmap {
@@ -442,23 +443,39 @@ button{
   background-color: var(--first-color);
   border-radius: 10px;
   margin-bottom: 20px;
+  
 }
 
 .roadmap ul li:last-child {
   margin-bottom: 0;
 }
 
-.roadmap_content h2 {
+.roadmap_content_l h2 {
   font-size: var(--h1-font-size);
   font-weight: 600;
   line-height: 30px;
-  margin-bottom: 10px;
+  margin: 10px 10px;
 }
 
-.roadmap_content p {
+.roadmap_content_r h2 {
+  font-size: var(--h1-font-size);
+  font-weight: 600;
+  line-height: 30px;
+  margin: 10px 10px;
+}
+
+.roadmap_content_l p {
   font-size: var(--normal-font-size);
   line-height: 30px;
   font-weight: var(--font-medium);
+  margin: 10px 10px;
+}
+
+.roadmap_content_r p {
+  font-size: var(--normal-font-size);
+  line-height: 30px;
+  font-weight: var(--font-medium);
+  margin: 10px 10px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -564,6 +581,10 @@ button{
   color: var(--title-color);
 }
 
+.button_social {
+  color:var(--title-color)
+}
+
 .trick_content:hover .trick_img {
   transform: translateY(-.5rem);
 
@@ -572,7 +593,7 @@ button{
 .trick_content:hover .trick_button {
   right: 0; 
 }
-/*=============== DISCOUNT ===============*/
+/*=============== CTA ===============*/
 .discount_container {
   background: var(--container-color);
   border-radius: 1rem;
@@ -632,9 +653,9 @@ button{
 }
 
 .footer_img-one{
-  width: 100px;
+  width: 180px;
   top: 6rem; 
-  right: -2rem;
+  right: -5rem;
 }
 
 .footer_img-two{
@@ -875,6 +896,7 @@ padding: 0 3rem;
   column-gap: 1rem;
 }
 
+
 .footer_img-two{
   right: initial;
   bottom: 0;
@@ -889,5 +911,97 @@ padding: 0 3rem;
     margin-left: auto;
     margin-right: auto;
   }
+
+  .section_title {
+    font-size: var(--h1-font-size);
+    margin-bottom: 3rem;
+  }
   
+  .home_content {
+    padding-top: 9rem;
+    gap: 3rem; 
+  }
+
+  .home_group {
+    padding-top: 0;
+  }
+
+  .home_img {
+    height: 400px;
+    transform: translateY(-3rem);
+  }
+
+  .home_indicator {
+    top: initial;
+    right: initial;
+    bottom: 15%;
+    left: 100%
+  }
+
+  .home_indicator::after {
+    top: 0;
+    height: 75px;
+  }
+  .home_details-img {
+    bottom: 0;
+  }
+
+  .home_title {
+    margin-bottom: var(--mb-1-5)
+  }
+
+  .home_description{
+    margin-bottom: var(--mb-2-5);
+    padding-right: 2rem;
+  }
+
+  .category_container {
+    column-gap: 8rem;
+  }
+
+  .category_img {
+    width: 200px;
+  }
+ 
+  .trick_container {
+    gap: 3.5rem; 
+  }
+ .trick_content {
+   border-radius: 1rem;
+ }
+
+ .trick_img {
+   width: 400px;
+   margin-bottom: .5rem;
+ }
+
+ .trick_title {
+   font-size: var(--h3-font-size);
+ }
+ .discount_container {
+   column-gap: 7rem;
+ }
+
+ .footer_copy {
+   margin-top: 6rem;
+ }
+}
+
+@media screen and (min-width: 1200px) {
+  .home_img {
+    height: 420px;
+  }
+
+  .swiper-pagination {
+    margin-top: var(--mb-2-5);
+  }
+
+  .footer_img-one{
+    width: 200px;
+  }
+  .footer_img-two {
+    width: 180px;
+    top: 30%;
+    left: -3%;
+  }
 }
