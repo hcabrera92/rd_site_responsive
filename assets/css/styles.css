@@ -247,6 +247,11 @@ button{
 
 }
 
+/* Crossout Roadmap */ 
+.done {
+  text-decoration: line-through;
+}
+
 /*=============== HOME ===============*/
 .home_content {
   row-gap: 1rem;
